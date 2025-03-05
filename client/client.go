@@ -27,7 +27,8 @@ func main() {
     args := &Args{A: 7, B: 8}
     var reply int
 
-    ticker := time.NewTicker(500 * time.Microsecond)
+    delay := 500
+    ticker := time.NewTicker(time.Duration(delay) * time.Microsecond)
     defer ticker.Stop()
 
     var latencies []time.Duration
