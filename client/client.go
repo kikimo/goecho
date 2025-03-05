@@ -57,7 +57,7 @@ func main() {
 	p50 := calculatePercentile(latencies, 50)
 	p90 := calculatePercentile(latencies, 90)
 
-	log.Printf("Mean: %s, P50: %s, P90: %s\n", mean, p50, p90)
+	log.Printf("Mean: %s, P50: %s, P90: %s, delay: %d\n", mean, p50, p90, delay)
 }
 
 // 计算均值
